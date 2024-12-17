@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fb;
+  color: #333;
+}
+
+.header {
+  background-color: #3b4a6b;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.header p {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.search-container {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 250px;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-bottom: 1px solid #e4e7ed;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f2f5;
+}
+
+.search-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3b4a6b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #2e3a56;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #2e3a56;
+}
+
+.error {
+  text-align: center;
+  font-size: 18px;
+  color: #d9534f;
+}
+
+.result-container {
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-title {
+  text-align: center;
+  color: #3b4a6b;
+  margin-bottom: 15px;
+}
+
+.synergy-list {
+  list-style: none;
+  padding: 0;
+}
+
+.synergy-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e4e7ed;
+}
+
+.synergy-item:last-child {
+  border-bottom: none;
+}
+
+.champion-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.champion-name {
+  font-weight: bold;
+  color: #3b4a6b;
+}
+
+.champion-winrate {
+  color: #5a6275;
+}
